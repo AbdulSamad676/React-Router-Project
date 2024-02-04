@@ -12,6 +12,7 @@ import Contact from './componants/Contact.jsx';
 import Layout from './componants/Layout.jsx';
 import './index.css';
 import User from './componants/User.jsx';
+import GitHub, { githubInfo } from './componants/GitHub.jsx';
 
 // let router = createBrowserRouter([
 // 	{
@@ -43,6 +44,7 @@ let router = createBrowserRouter(
 			<Route path='about' element={<About />} />
 			<Route path='contact' element={<Contact />} />
 			<Route path='user/:id' element={<User />} />
+			<Route loader={githubInfo} path='github' element={<GitHub />} />
 		</Route>
 	)
 );

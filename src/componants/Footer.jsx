@@ -21,14 +21,37 @@ export default function Footer() {
 							</h2>
 							<ul className='text-gray-500 font-medium'>
 								<li className='mb-4'>
-									<Link to='/' className='hover:underline'>
+									<Link
+										to='/'
+										className={({ isActive }) =>
+											`block py-2 pr-4 pl-3 duration-200 
+                                        ${
+											isActive
+												? 'text-orange-700'
+												: 'text-gray-700'
+										} border-b border-gray-100 
+                                        hover:bg-gray-50
+                                     	lg:hover:bg-transparent lg:border-0
+                                        hover:text-orange-700 lg:p-0`
+										}
+									>
 										Home
 									</Link>
 								</li>
 								<li>
 									<Link
 										to='/about'
-										className='hover:underline'
+										className={({ isActive }) =>
+											`block py-2 pr-4 pl-3 duration-200 
+                                        ${
+											isActive
+												? 'text-orange-700'
+												: 'text-gray-700'
+										} border-b border-gray-100 
+                                        hover:bg-gray-50
+                                     lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+										}
 									>
 										About
 									</Link>
@@ -42,8 +65,18 @@ export default function Footer() {
 							<ul className='text-gray-500 font-medium'>
 								<li className='mb-4'>
 									<a
-										href='https://github.com/hiteshchoudhary'
-										className='hover:underline'
+										href='https://github.com/AbdulSamad676'
+										className={({ isActive }) =>
+											`block py-2 pr-4 pl-3 duration-200 
+                                        ${
+											isActive
+												? 'text-orange-700'
+												: 'text-gray-700'
+										} border-b border-gray-100 
+                                        hover:bg-gray-50
+                                     	lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+										}
 										target='_blank'
 										rel='noreferrer'
 									>
@@ -51,7 +84,20 @@ export default function Footer() {
 									</a>
 								</li>
 								<li>
-									<Link to='/' className='hover:underline'>
+									<Link
+										to='/'
+										className={({ isActive }) =>
+											`block py-2 pr-4 pl-3 duration-200 
+                                        ${
+											isActive
+												? 'text-orange-700'
+												: 'text-gray-700'
+										} border-b border-gray-100 
+                                        hover:bg-gray-50
+                                     lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+										}
+									>
 										Discord
 									</Link>
 								</li>
@@ -63,12 +109,38 @@ export default function Footer() {
 							</h2>
 							<ul className='text-gray-500 font-medium'>
 								<li className='mb-4'>
-									<Link to='#' className='hover:underline'>
+									<Link
+										to='#'
+										className={({ isActive }) =>
+											`block py-2 pr-4 pl-3 duration-200 
+                                        ${
+											isActive
+												? 'text-orange-700'
+												: 'text-gray-700'
+										} border-b border-gray-100 
+                                        hover:bg-gray-50
+                                     lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+										}
+									>
 										Privacy Policy
 									</Link>
 								</li>
 								<li>
-									<Link to='#' className='hover:underline'>
+									<Link
+										to='#'
+										className={({ isActive }) =>
+											`block py-2 pr-4 pl-3 duration-200 
+                                        ${
+											isActive
+												? 'text-orange-700'
+												: 'text-gray-700'
+										} border-b border-gray-100 
+                                        hover:bg-gray-50
+                                     lg:hover:bg-transparent lg:border-0
+                                         hover:text-orange-700 lg:p-0`
+										}
+									>
 										Terms &amp; Conditions
 									</Link>
 								</li>
@@ -84,7 +156,7 @@ export default function Footer() {
 							href='https://hiteshchoudhary.com/'
 							className='hover:underline'
 						>
-							hiteshchoudhary
+							AbdulSamad676
 						</a>
 						. All Rights Reserved.
 					</span>
